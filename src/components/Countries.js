@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
-  const [contriesDetail, setContriesDetail] = useState([]);
 
   useEffect(() => {
     axios
@@ -72,18 +71,3 @@ const Countries = () => {
 
 export default Countries;
 
-// {countries.map((value, index) => {
-//     //   console.log(value.name.common)
-//     return (
-//       <div key={index} className="card m-2">
-//         <div className="card-header">Country</div>
-//         <div className="card-body">
-//           <h5 className="card-title">Name: {value.name.common}</h5>
-//           <p className="card-text">
-//             For more Info please press the below dropdown
-//           </p>
-
-//         </div>
-//       </div>
-//     );
-//   })}
